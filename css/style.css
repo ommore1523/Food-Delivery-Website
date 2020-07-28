@@ -1,0 +1,230 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================ Utility classes ========================== */
+.h-primary {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.h-secondery {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(20, 19, 19);
+  font-size: 2.5rem;
+  padding-top: 10px;
+}
+.para {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1rem;
+  color: rgb(250, 253, 241);
+}
+
+.btn {
+  padding: 10px 30px;
+  background-color: rgb(155, 234, 236);
+  border: 2px solid rgb(12, 110, 17);
+  border-radius: 20px;
+  margin-top: 30px 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: darkorchid;
+  color: floralwhite;
+}
+
+.center {
+  text-align: center;
+}
+
+/* ========================= Navigation Bar ==================================== */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#logo img {
+  padding: 10px 10px;
+  margin: -7px 15px;
+  height: 30px;
+  width: 30px;
+  background-color: rgb(238, 237, 232);
+  border-radius: 40px;
+  padding-top: 1px;
+}
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  display: block;
+  margin: 0px 19px;
+  padding: 14px 13px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: violet;
+}
+
+/* ============================ Home =================================== */
+
+#home {
+  height: 517px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#home::before {
+  content: "";
+  background: url("../bg1.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 497px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+#home h1 {
+  margin: 20px 20px;
+}
+#home p {
+  margin: 20px 20px;
+}
+
+/* ============================Services Section ========================== */
+
+#services {
+  display: flex;
+  margin: 30px;
+
+}
+
+#services .box {
+  display: block;
+  width: 50%;
+  border: 2px solid rgb(102, 36, 226);
+  text-align: center;
+  margin: 8px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  background-color: rgb(213, 221, 228);
+  /* box-shadow: -3px -7px 10px rgb(140, 233, 186); */
+}
+#services .box img {
+  display: block;
+  margin: auto;
+  height: 100px;
+}
+
+/* ======================= Clients =============================== */
+#client-section {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url("../bg.jpg") no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#clients img {
+  height: 100px;
+}
+
+.client-items {
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+
+/* ========================== Contact Section============================ */
+#contact-form {
+  position: relative;
+}
+#contact-form::before {
+  content: "";
+  position: absolute;
+  background: url("../contact.jpg") no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.form input,
+.form textarea{
+width: 100%;
+padding: 1rem;
+border-radius: 10px;
+border-color: violet;
+}
+
+.form input:hover,
+.form textarea:hover{
+border-color: red;
+border-radius: 40px;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+.form-item{
+    padding: 10px 10px;
+}
+
+label{
+    text-align: center;
+    font-size: 1rem;
+    color: mediumblue;
+    font-weight: bold;
+}
+/* ===============Footer=========================== */
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    margin: 10px 0px;
+}
